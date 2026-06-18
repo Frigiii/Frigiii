@@ -1,3 +1,4 @@
+<!--
 ## Hi there 👋
 
 <p align="center">
@@ -5,6 +6,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=frigiii&layout=compact&theme=radical" alt="Frigiii's Languages" width="45%" />
 </p>
 
+-->
 ![My Global Metrics](github-metrics.svg)
 
 <!--

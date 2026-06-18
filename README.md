@@ -5,6 +5,8 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=frigiii&layout=compact&theme=radical" alt="Frigiii's Languages" width="45%" />
 </p>
 
+![My Global Metrics](github-metrics.svg)
+
 <!--
 **Frigiii/Frigiii** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

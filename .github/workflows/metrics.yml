@@ -1,0 +1,28 @@
+name: Metrics
+on:
+  # Schedule updates once a day
+  schedule: [{cron: "0 0 * * *"}]
+  # (Optional) Run workflow manually
+  workflow_dispatch:
+  # Run workflow on each push to the master branch
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # You'll need to generate a GitHub Personal Access Token (classic) 
+          # with 'repo' and 'read:user' scopes, and save it as METRICS_TOKEN in your Repo Secrets
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # Core configuration
+          user: frigiii
+          template: classic
+          base: header, activity, community, repositories
+          
+          # This plugin analyzes languages from recent commits across ALL repos
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_indepth: yes # Crucial: forces it to look at commits, not just repo ownership
+          plugin_languages_limit: 8

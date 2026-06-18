@@ -16,6 +16,9 @@ jobs:
           # with 'repo' and 'read:user' scopes, and save it as METRICS_TOKEN in your Repo Secrets
           token: ${{ secrets.METRICS_TOKEN }}
           
+          config_timezone: Europe/Zurich # Adjust to your local timezone so daily stats align perfectly
+          commits_authoring: frigiii, frigiii@users.noreply.github.com # Forces it to find commits matching your identity
+          
           # Core configuration
           user: frigiii
           template: classic

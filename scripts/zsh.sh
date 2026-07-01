@@ -7,4 +7,8 @@ code ~/.zshrc
 echo "source ~/.profile" >> ~/.zshrc
 echo "source ~/workspaces/Frigiii-private/aliases.sh" >> ~/.zshrc
 echo "PATH=$(echo "$PATH" | tr ':' '\n' | grep -v '^/mnt/c/' | paste -sd :)" >> ~/.zshrc # WSL remove Windows binary paths
-sudo apt install fonts-powerline # on Ubuntu to get proper agnoster characters
+sudo apt install fonts-powerline # on Ubuntu to get proper agnoster characters might require additional steps:
+# # 1. Update package list and install the verified Hack Nerd Font package
+# sudo apt update && sudo apt install -y fonts-hack
+# # 2. Rebuild the system font cache globally
+# sudo fc-cache -f -v
